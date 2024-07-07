@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import GroupSVG from '../../public/svg/group.svg';
-import FirstSVG from '../../public/svg/first.svg';
-import SecondSVG from '../../public/svg/second.svg';
-import ThirdSVG from '../../public/svg/third.svg';
-import ScrollSVG from '../../public/svg/scroll.svg';
-import Group2SVG from '../../public/svg/group2.svg';
-import InstagramSVG from '../../public/svg/instagram.svg';
-import StarSVG from '../../public/svg/star.svg';
+import GroupSVG from '../../../public/svg/group.svg';
+import SecondSVG from '../../../public/svg/second.svg';
+import ThirdSVG from '../../../public/svg/third.svg';
+import FirstSVG from '../../../public/svg/first.svg';
+import ScrollSVG from '../../../public/svg/scroll.svg';
+import Group2SVG from '../../../public/svg/group2.svg';
+import InstagramSVG from '../../../public/svg/instagram.svg';
+import StarSVG from '../../../public/svg/star.svg';
 import Link from 'next/link';
 
 const reviews: {
@@ -17,61 +17,66 @@ const reviews: {
 }[] = [
   {
     content:
-      '동아리에서 번개로 만날 때가 잦은데, 그럴 때면 인원 수가 많아서 예약하기가 어려웠습니다. TIG를 알고 난 뒤로 예약이 쉽고 간단하게 되니까 너무 효율적입니다.',
+      '평일 오전에는 손님이 없어서 TIG 즉흥 이벤트 기능을 사용했더니 기존 대비 손님이 많이 와서 좋아요. 시간을 효율적으로 사용할 수 있습니다.',
     rating: 5,
-    name: '김ㅇㅇ',
+    name: '강남 A 볼링장',
     info: '20대 남성',
   },
   {
     content:
-      '예약할 때 예약금은 따로 내고 결제는 또 따로 내고... 너무 번거로웠습니다. 그런데 TIG에서 예약부터 결제까지 한 번에 가능하니까 신경쓸 것도 편하네요.',
+      'TIG에서 다른 동아리나 동호회에 대신 홍보해주니까 단체 손님들이 많이 와요. 기존에 사용했던 광고비보다 마케팅 효과가 더 좋습니다.',
     rating: 5,
-    name: '하ㅇㅇ',
+    name: '마포 B 볼링장',
     info: '20대 여성',
   },
   {
     content:
-      '예전에는 제가 하나 하나 검색하고 찾느라 너무 번거로웠는데 TIG에서 필터를 설정하고 나니, 제가 원하는 정보만 떠서 너무 좋습니다.',
+      '원래 예약 관리를 자체적으로 해서 실수가 되게 많았는데 TIG에서 관리 툴을 제공해주니까 너무 편하고 좋습니다. 고객에게 리마인드 문자도 가능해서 너무 편해요.',
     rating: 5,
-    name: '김ㅇㅇ',
+    name: '마포 C 스크린 골프장',
     info: '20대 여성',
   },
   {
     content:
-      'TIG 하나로 당구장도 예약하고 대학로 연극도 예약할 수 있어서 뭐 하지 싶을 때 바로 TIG부터 확인합니다. 데이트 계획 세울 때로 위치 설정하고 시간 설정하면 즐길 수 있는 활동이 바로 떠서 애용합니다.',
+      '이벤트를 진행해도 고객들이 모를 때가 많아서 별로 이득을 못 봤는데 TIG에서 진행하면 고객들이 알아봐주고 더 찾아와주는거 같아요. 똑같은 이벤트를 진행해도 TIG에서 하면 더 이득을 봅니다.',
     rating: 5,
-    name: '최ㅇㅇ',
+    name: '송파 D 헬스장',
     info: '20대 남성',
   },
   {
     content:
-      '친구들이랑 술 마시고 볼링치러 가는데 처음 써봤습니다. 원래 무작정 볼링장 가고 자리가 날 때까지 기다리느라 시간 낭비가 심했는데, 제 라인을 미리 예약하고 가니까 기다리는 시간 없이 바로 칠 수 있어서 너무 좋았습니다.',
+      '음식, 쇼핑 관련 플랫폼은 다 있는데 여가에만 없어서 아쉬웠습니다. 이제 드디어 생겼네요. 여가 사업 종사자 분들은 다들 꼭 쓰셨으면 좋겠습니다!',
     rating: 5,
-    name: '이ㅇㅇ',
-    info: '30대 남성',
+    name: '마포 E 탁구장',
+    info: '마포 E 탁구장',
   },
   {
     content:
-      '사실 어떤 당구장 가격이 합리적인지 모르고 그냥 소비하고 있었는데 TIG 쓰니까 이제 알았어요.. 제가 그동안 더 비싼 돈을 내면서 당구장을 다니고 있었네요. 저도 모르고 있던 지출을 막아주셔서 감사합니다!',
+      '네이버에 아무리 홍보해도 이벤트를 진행 중인지 사람들이 잘 몰라서 어떻게 마케팅 해야하는지 고민이 많았습니다. 그러다 TIG라는 서비스를 알게 되었고 TIG를 통해 들어오는 고객들이 기존보다 훨씬 많아져서 정말 다행이에요!! 고객과 사업자 모두 이득을 보는 구조가 참 좋습니다.',
     rating: 5,
-    name: '하ㅇㅇ',
-    info: '30대 여성',
+    name: '강남 F 당구장',
+    info: '강남 F 당구장',
   },
 ];
 
-export default function Home() {
+export default function Page() {
   return (
     <main className="flex w-full h-full flex-col items-center overflow-y-scroll snap-y snap-mandatory relative">
-      <Link href="/buisnessman" className="z-30 absolute bottom-[20px] right-[20px] w-fit h-[64px] p-[30px] border-none font-semibold text-[28px] text-grey4 flex justify-center items-center rounded-[10px] hover:bg-grey7">
-            사업자 이신가요? 클릭!
-          </Link>
+      <Link
+        href="/"
+        className="z-30 absolute bottom-[20px] right-[20px] w-fit h-[64px] p-[30px] border-none font-semibold text-[28px] text-grey4 flex justify-center items-center rounded-[10px] hover:bg-grey7"
+      >
+        소비자 이신가요? 클릭!
+      </Link>
       <div>
         <ScrollSVG className="z-30 absolute bottom-[25px] mx-auto translate-x-[-50%]" />
-        <p className="z-30 absolute bottom-[10px] mx-auto translate-x-[-50%] text-[20px] leading-[40px] tracking-[-0.02em] text-grey6" >Scroll down to see more</p>
+        <p className="z-30 absolute bottom-[10px] mx-auto translate-x-[-50%] text-[20px] leading-[40px] tracking-[-0.02em] text-grey6">
+          Scroll down to see more
+        </p>
       </div>
       <section className="w-full h-full bg-black shrink-0 snap-start flex justify-center items-center gap-[132px]">
         <div className="relative w-[700px]">
-          <FirstSVG className="absolute bottom-[-500px]"/>
+          <FirstSVG className="absolute bottom-[-500px]" />
         </div>
         <div className="flex flex-col gap-[208px]">
           <div className="flex flex-col gap-[40px]">
@@ -89,23 +94,26 @@ export default function Home() {
       </section>
       <section className="z-20 w-full h-full bg-grey3 shrink-0 snap-start flex flex-col gap-[30px] justify-center items-center font-bold text-[34px] tracking-[-0.02em] text-grey5">
         <p>
-          아직도 원하는 여가 사업체를 찾기 위해{' '}
-          <span className="text-bold text-grey6">일일이 검색</span>하시나요?
-        </p>
-        <p>
-          사업체마다{' '}
+          아직도 무분별한{' '}
           <span className="text-bold text-grey6">
-            요구하는 예약 방식이 다르거나, 아예 예약이 안 돼서
+            랜덤 마케팅에 광고비를 지출
           </span>{' '}
+          하시나요?
+        </p>
+        <p>
+          고객 유치를 위한{' '}
+          <span className="text-bold text-grey6">홍보 수단이 제한적</span>이라
+          어려움을 겪고 계신가요?
+        </p>
+        <p>
+          <span className="text-bold text-grey6">예약 관리 툴이 없어 </span>
+          사업 진행에 한계를 느끼셨나요?
+        </p>
+        <p>
+          <span className="text-bold text-grey6">
+            효율적인 사업 관리가 안 돼
+          </span>
           힘드셨나요?
-        </p>
-        <p>
-          <span className="text-bold text-grey6">예약 따로, 결제 따로..</span>{' '}
-          너무 번거롭지 않으신가요?
-        </p>
-        <p>
-          아직도 워크인으로 간 뒤 본인 자리가 날 때까지{' '}
-          <span className="text-bold text-grey6">마냥 기다리셨나요?</span>
         </p>
       </section>
       <section className="w-full h-full bg-black bg-gradient-to-b from-[#CED3D6] to-white shrink-0 snap-start flex flex-col gap-[35px] justify-center items-center font-bold text-[55px] tracking-[-0.02em] text-grey7">
@@ -116,7 +124,7 @@ export default function Home() {
         </p>
       </section>
       <section className="w-full h-full bg-[#F8F9FA] shrink-0 snap-start flex flex-col gap-[60px] justify-center items-center font-semibold text-[36px] tracking-[-0.02em] text-black px-[240px]">
-        <p>현재 많은 고객들이 TIG를 통해 여가를 즐기고 계십니다.</p>
+        <p>현재 많은 사업자들이 TIG를 통해 수익을 창출하고 계십니다.</p>
         <div className="w-3/4">
           <Image
             src="/png/dummy.png"
@@ -136,8 +144,9 @@ export default function Home() {
           <div className="flex flex-col gap-[30px]">
             <p>1</p>
             <p>
-              위치, 시간, 가격 등<br /> 필터 설정 후 필요한 정보만
-              <br /> 확인하세요!
+              날짜별 예약 확인,
+              <br /> 고객 예약 리마인드 서비스로
+              <br /> 예약을 쉽게 관리하세요!
             </p>
           </div>
         </div>
@@ -148,9 +157,9 @@ export default function Home() {
         <div className="flex flex-col gap-[30px]">
           <p>2</p>
           <p>
-            예약부터 결제까지
-            <br /> 통일된 과정으로
-            <br /> 한번에 해결하세요!
+            사업체 방문 고객,
+            <br /> 후기 등 사업 관리 툴로
+            <br /> 업무 효율을 증진해보세요!
           </p>
         </div>
       </section>
@@ -158,9 +167,9 @@ export default function Home() {
         <div className="flex flex-col gap-[30px]">
           <p>3</p>
           <p>
-            스포츠부터
-            <br /> 연극까지 한 번에
-            <br /> 예약하세요!
+            즉흥 이벤트 등록으로
+            <br /> 고객을 쉽게
+            <br /> 유치할 수 있습니다!
           </p>
         </div>
         <SecondSVG />
@@ -173,7 +182,7 @@ export default function Home() {
           {reviews.map((review, idx) => (
             <div
               key={idx}
-              className="w-calgap h-[180px] flex flex-col p-5 justify-around bg-white rounded-[10px]"
+              className="w-calgap h-fit flex flex-col p-5 justify-around bg-white rounded-[10px]"
             >
               <p className="text-[18px] leading-[28px] font-medium tracking-[-0.02em] text-grey6">
                 {review.content}
@@ -181,7 +190,6 @@ export default function Home() {
               <StarSVG />
               <div className="flex gap-[10px] text-[18px] leading-[30px] font-medium tracking-[-0.02em] text-grey4">
                 <p>{review.name}</p>
-                <p>{review.info}</p>
               </div>
             </div>
           ))}
