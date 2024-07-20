@@ -87,26 +87,37 @@ export default function Home() {
         </div>
         <IphoneFifteenSVG />
       </section>
-      <section className="z-20 w-full h-full bg-grey3 shrink-0 snap-start flex flex-col gap-[30px] justify-center items-center font-bold text-[34px] tracking-[-0.02em] text-grey5">
-        <p>
-          아직도 원하는 여가 사업체를 찾기 위해{' '}
-          <span className="text-bold text-grey6">일일이 검색</span>하시나요?
+      <section className="z-20 w-full h-full bg-grey3 shrink-0 snap-start flex flex-col gap-[30px] justify-center px-[200px] font-bold text-[34px] tracking-[-0.02em] text-grey7">
+        <p className="font-bold text-[52px] leading-[140%] mb-[10px] text-black">
+          스포츠여가,
+          <br />
+          즐기기 어려우셨나요?
         </p>
-        <p>
+        <div className="rounded-[30px] bg-white text-[28px] font-medium w-fit h-[100px] px-[60px] flex items-center">
+          원하는 사업체를 찾기 위해{' '}
+          <span className="font-semibold text-primary_orange1">
+            일일이 검색
+          </span>
+          해야 해요.
+        </div>
+        <div className="rounded-[30px] bg-white text-[28px] font-medium w-fit h-[100px] px-[60px] flex items-center self-end">
           사업체마다{' '}
-          <span className="text-bold text-grey6">
-            요구하는 예약 방식이 다르거나, 아예 예약이 안 돼서
-          </span>{' '}
-          힘드셨나요?
-        </p>
-        <p>
-          <span className="text-bold text-grey6">예약 따로, 결제 따로..</span>{' '}
-          너무 번거롭지 않으신가요?
-        </p>
-        <p>
-          아직도 워크인으로 간 뒤 본인 자리가 날 때까지{' '}
-          <span className="text-bold text-grey6">마냥 기다리셨나요?</span>
-        </p>
+          <span className="font-semibold text-primary_orange1">
+            요구하는 예약 방식이 다르거나 예약이 안 돼요.
+          </span>
+        </div>
+        <div className="rounded-[30px] bg-white text-[28px] font-medium w-fit h-[100px] px-[60px] flex items-center">
+          예약 따로, 결제 따로...{' '}
+          <span className="font-semibold text-primary_orange1">
+            너무 번거로워요.
+          </span>
+        </div>
+        <div className="rounded-[30px] bg-white text-[28px] font-medium w-fit h-[100px] px-[60px] flex items-center self-end">
+          워크인으로 가서{' '}
+          <span className="font-semibold text-primary_orange1">
+            자리가 날 때까지 마냥 기다렸어요.
+          </span>
+        </div>
       </section>
       <section className="w-full h-full bg-black bg-gradient-to-b from-[#CED3D6] to-white shrink-0 snap-start flex flex-col gap-[35px] justify-center items-center font-bold text-[55px] tracking-[-0.02em] text-grey7">
         <p>걱정마세요,</p>
@@ -116,17 +127,19 @@ export default function Home() {
         </p>
       </section>
       <section className="w-full h-full bg-[#F8F9FA] shrink-0 snap-start flex flex-col gap-[60px] justify-center items-center font-semibold text-[36px] tracking-[-0.02em] text-black px-[240px]">
-        <p>현재 많은 고객들이 TIG를 통해 여가를 즐기고 계십니다.</p>
-        <div className="w-3/4">
-          <Image
-            src="/png/dummy.png"
-            alt="tigVideo"
-            layout="responsive"
-            width={1440}
-            height={810}
-            sizes="(max-width: 1440px) 75vw, 1440px"
-          />
-        </div>
+        <p className='text-bold'>현재 많은 고객들이 TIG를 통해 여가를 즐기고 계십니다.</p>
+          <div className="w-full">
+            <video width="100%" height="240" controls preload="none">
+              <source src="/path/TIG_소비자편.mp4" type="video/mp4" />
+              <track
+                src="/path/to/captions.vtt"
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
       </section>
       <section className="w-full h-full bg-white shrink-0 snap-start flex gap-[60px] justify-between items-center font-semibold text-[48px] leading-[70px] tracking-[-0.02em] text-black px-[240px]">
         <div className="flex flex-col justify-between h-full py-[130px]">
