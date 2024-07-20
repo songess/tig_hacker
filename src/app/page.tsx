@@ -9,6 +9,7 @@ import InstagramSVG from '../../public/svg/instagram.svg';
 import StarSVG from '../../public/svg/star.svg';
 import Link from 'next/link';
 import IphoneFifteenSVG from '../../public/svg/iPhone 15 Pro.svg';
+import TigLogoSVG from '../../public/svg/tigLog.svg';
 
 const reviews: {
   content: string;
@@ -63,17 +64,26 @@ const reviews: {
 export default function Home() {
   return (
     <main className="flex w-full h-full flex-col items-center overflow-y-scroll snap-y snap-mandatory relative">
-      <section className="w-full h-full bg-[#191F28] shrink-0 snap-start flex justify-center items-center gap-[132px]">
-        <div className="flex flex-col w-fit h-fit justify-start">
-          <span>스포츠 여가의</span>
-          <span>새로운 시작</span>
-          <div className="text-grey5">
+      <section className="w-full h-full bg-[#191F28] shrink-0 snap-start flex justify-center items-center gap-[40px]">
+        <div className="flex flex-col w-[450px] h-fit justify-start ml-[10%]">
+          <TigLogoSVG />
+          <span className="font-bold text-[60px] text-white leading-[140%] tracking-[-2%] mt-10">
+            스포츠 여가의
+          </span>
+          <span className="font-bold text-[60px] text-white leading-[140%] tracking-[-2%]">
+            새로운 시작
+          </span>
+          <div className="text-grey5 font-medium text-[26px] leading-[150%] tracking-[-2%] mb-[70px]">
             여가 예약 중개 플랫폼 TIG는 여가를 더 쉽게 즐길 수 있도록 솔루션을
             제공합니다.
           </div>
-          <button className="bg-primary_orange1 text-white">
+
+          <Link
+            href={'https://main--testtig.netlify.app/'}
+            className="w-fit h-fit py-[26px] px-[50px] rounded-[10px] bg-primary_orange1 font-bold text-[20px] leading-[100%] tracking-[-2%] text-white"
+          >
             바로 시작하기
-          </button>
+          </Link>
         </div>
         <IphoneFifteenSVG />
       </section>
